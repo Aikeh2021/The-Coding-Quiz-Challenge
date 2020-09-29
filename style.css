@@ -8,10 +8,12 @@ a {
     text-decoration: none;
 }
 
+/* Time element styling */
 #timer{
     float: right;
 }
 
+/* Paragraph in main styling */
 p {
     text-align: center;
     margin-left: 30%;
