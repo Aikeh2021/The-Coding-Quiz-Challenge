@@ -13,4 +13,5 @@ p {
 #start {
     color: white;
     background-color: purple;
+    border-radius: 5px;
 }
