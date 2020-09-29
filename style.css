@@ -3,6 +3,12 @@
 text-align: center;
 }
 
+p {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 32%;
+}
+
 /* Changing the appearance of the start button in the main */
 #start {
     color: white;
