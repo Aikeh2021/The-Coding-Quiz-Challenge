@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+#timer{
+    float: right;
+}
+
 p {
     text-align: center;
     margin-left: 30%;
