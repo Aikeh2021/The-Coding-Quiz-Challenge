@@ -1,3 +1,9 @@
+/* Styling the main and its contents to be centered */
+.container {
+text-align: center;
+}
+
+/* Changing the appearance of the start button in the main */
 #start {
     color: white;
     background-color: purple;
