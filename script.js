@@ -38,15 +38,6 @@ ulEl.append(liEl4);
 document.body.append(ulEl);
 
 
-var allBtns = document.querySelector("button");
-for(i=0; i<btnTags.length; i++){
-    allBtns.setAttribute("style", "list-style-type: none");
-}
-// for(i=0; i<ulTag.length; i++){
-//     ulTag[i].setAttribute("style", "list-style-type:none");
-// }
-// ulTag.setAttribute("style", "list-style-type:none");
-
 //Question 2, dynamically generated Elements
 h1El1.textContent = "The condition in an if/else statement is encolosed within ____________.";
 document.body.append(h1El1);
