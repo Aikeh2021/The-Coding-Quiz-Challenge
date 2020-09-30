@@ -1,6 +1,9 @@
 /* Styling the main and its contents to be centered */
-.container {
-text-align: center;
+main {
+    display:block;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
 }
 
 /* View highscores link styling */
@@ -14,10 +17,11 @@ a {
 }
 
 /* Paragraph in main styling */
+
 p {
     text-align: center;
-    margin-left: 30%;
-    margin-right: 32%;
+    margin-left: 10%;
+    margin-right: 12%;
 }
 
 /* Changing the appearance of the start button in the main */
