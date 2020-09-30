@@ -99,6 +99,26 @@ liEl4.append(btnEl4);
 ulEl.append(liEl4);
 document.body.append(ulEl);
 
+//Question 5, dynamically generated Elements
+h1El1.textContent = "A very useful tool used during development and debugging for printing content to the debugger is:";
+document.body.append(h1El1);
+btnEl1.textContent = "1. JavaScript";
+liEl1.append(btnEl1);
+ulEl.append(liEl1);
+document.body.append(ulEl);
+btnEl2.textContent = "2. terminal/bash";
+liEl2.append(btnEl2);
+ulEl.append(liEl2);
+document.body.append(ulEl);
+btnEl3.textContent = "3. for loops";
+liEl3.append(btnEl3);
+ulEl.append(liEl3);
+document.body.append(ulEl);
+btnEl4.textContent = "4. console.log";
+liEl4.append(btnEl4);
+ulEl.append(liEl4);
+document.body.append(ulEl);
+
 
 
 //Create a for loop that takes the bullet points off the list items (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none)
