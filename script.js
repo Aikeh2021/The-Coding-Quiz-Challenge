@@ -13,8 +13,8 @@ var liEl3 = document.createElement("li");
 var btnEl3 = document.createElement("button");
 var liEl4 = document.createElement("li");
 var btnEl4 = document.createElement("button");
-
-
+var ulTag = document.querySelectorAll("ul");
+//Question 1, dynamically generated Elements
 h1El1.textContent = "Commonly used data types DO NOT include:";
 document.body.append(h1El1);
 btnEl1.textContent = "1. strings";
@@ -34,8 +34,38 @@ liEl4.append(btnEl4);
 ulEl.append(liEl4);
 document.body.append(ulEl);
 
+for(i=0; i<ulTag.length; i++){
+    ulTag[i].setAttribute("style", "list-style-type:none");
+}
+// ulTag.setAttribute("style", "list-style-type:none");
+
+//Question 1, dynamically generated Elements
+h1El1.textContent = "The condition in an if/else statement is encolosed within ____________.";
+document.body.append(h1El1);
+btnEl1.textContent = "1. quotes";
+liEl1.append(btnEl1);
+ulEl.append(liEl1);
+document.body.append(ulEl);
+btnEl2.textContent = "2. curly brackets";
+liEl2.append(btnEl2);
+ulEl.append(liEl2);
+document.body.append(ulEl);
+btnEl3.textContent = "3. parentheses";
+liEl3.append(btnEl3);
+ulEl.append(liEl3);
+document.body.append(ulEl);
+btnEl4.textContent = "4. square brackets";
+liEl4.append(btnEl4);
+ulEl.append(liEl4);
+document.body.append(ulEl);
+
+
 
 //Create a for loop that takes the bullet points off the list items (https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none)
+// var btnTags = document.querySelectorAll("button")
+// for(i=0; i<4; i++){
+// btnTags[i].setAttribute("")    
+// }
 
 
 
