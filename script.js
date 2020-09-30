@@ -4,8 +4,8 @@ console.log("WE LIVE BABY!");
 
 //Step 3: Simultaneously, dynamically create the question with buttons that have answer options
 var h1El1 = document.createElement("h1");
-var ulEl = document.createElement("ul");
-var liEl1 = document.createElement("li");
+var dlEl = document.createElement("dl");
+var dtEl1 = document.createElement("dt");
 var btnEl1 = document.createElement("button");
 var liEl2 = document.createElement("li");
 var btnEl2 = document.createElement("button");
@@ -14,26 +14,34 @@ var btnEl3 = document.createElement("button");
 var liEl4 = document.createElement("li");
 var btnEl4 = document.createElement("button");
 var ulTag = document.querySelectorAll("ul");
+
+var btnTags = ["btnEl1", "btnEl2", "btnEl3", "btnEl4"];
+
 //Question 1, dynamically generated Elements
 h1El1.textContent = "Commonly used data types DO NOT include:";
 document.body.append(h1El1);
-btnEl1.textContent = "1. strings";
-liEl1.append(btnEl1);
-ulEl.append(liEl1);
-document.body.append(ulEl);
-btnEl2.textContent = "2. booleans";
+btnEl1.textContent = "1.strings";
+dtEl1.append(btnEl1);
+dlEl.append(dtEl1);
+document.body.append(dlEl);
+btnEl2.textContent = "2.booleans";
 liEl2.append(btnEl2);
 ulEl.append(liEl2);
 document.body.append(ulEl);
-btnEl3.textContent = "3. alerts";
+btnEl3.textContent = "3.alerts";
 liEl3.append(btnEl3);
 ulEl.append(liEl3);
 document.body.append(ulEl);
-btnEl4.textContent = "4. numbers";
+btnEl4.textContent = "4.numbers";
 liEl4.append(btnEl4);
 ulEl.append(liEl4);
 document.body.append(ulEl);
 
+
+var allBtns = document.querySelector("button");
+for(i=0; i<btnTags.length; i++){
+    allBtns.setAttribute("style", "list-style-type: none");
+}
 // for(i=0; i<ulTag.length; i++){
 //     ulTag[i].setAttribute("style", "list-style-type:none");
 // }
@@ -42,19 +50,19 @@ document.body.append(ulEl);
 //Question 2, dynamically generated Elements
 h1El1.textContent = "The condition in an if/else statement is encolosed within ____________.";
 document.body.append(h1El1);
-btnEl1.textContent = "1. quotes";
+btnEl1.textContent = "1.quotes";
 liEl1.append(btnEl1);
 ulEl.append(liEl1);
 document.body.append(ulEl);
-btnEl2.textContent = "2. curly brackets";
+btnEl2.textContent = "2.curly brackets";
 liEl2.append(btnEl2);
 ulEl.append(liEl2);
 document.body.append(ulEl);
-btnEl3.textContent = "3. parentheses";
+btnEl3.textContent = "3.parentheses";
 liEl3.append(btnEl3);
 ulEl.append(liEl3);
 document.body.append(ulEl);
-btnEl4.textContent = "4. square brackets";
+btnEl4.textContent = "4.square brackets";
 liEl4.append(btnEl4);
 ulEl.append(liEl4);
 document.body.append(ulEl);
@@ -82,19 +90,19 @@ document.body.append(ulEl);
 //Question 4, dynamically generated Elements
 h1El1.textContent = "String values must be encolosed within ___________ when being assigned to variables.";
 document.body.append(h1El1);
-btnEl1.textContent = "1. commas";
+btnEl1.textContent = "1.commas";
 liEl1.append(btnEl1);
 ulEl.append(liEl1);
 document.body.append(ulEl);
-btnEl2.textContent = "2. curly brackets";
+btnEl2.textContent = "2.curly brackets";
 liEl2.append(btnEl2);
 ulEl.append(liEl2);
 document.body.append(ulEl);
-btnEl3.textContent = "3. quotes";
+btnEl3.textContent = "3.quotes";
 liEl3.append(btnEl3);
 ulEl.append(liEl3);
 document.body.append(ulEl);
-btnEl4.textContent = "4. parentheses";
+btnEl4.textContent = "4.parentheses";
 liEl4.append(btnEl4);
 ulEl.append(liEl4);
 document.body.append(ulEl);
@@ -102,19 +110,19 @@ document.body.append(ulEl);
 //Question 5, dynamically generated Elements
 h1El1.textContent = "A very useful tool used during development and debugging for printing content to the debugger is:";
 document.body.append(h1El1);
-btnEl1.textContent = "1. JavaScript";
+btnEl1.textContent = "1.JavaScript";
 liEl1.append(btnEl1);
 ulEl.append(liEl1);
 document.body.append(ulEl);
-btnEl2.textContent = "2. terminal/bash";
+btnEl2.textContent = "2.terminal/bash";
 liEl2.append(btnEl2);
 ulEl.append(liEl2);
 document.body.append(ulEl);
-btnEl3.textContent = "3. for loops";
+btnEl3.textContent = "3.for loops";
 liEl3.append(btnEl3);
 ulEl.append(liEl3);
 document.body.append(ulEl);
-btnEl4.textContent = "4. console.log";
+btnEl4.textContent = "4.console.log";
 liEl4.append(btnEl4);
 ulEl.append(liEl4);
 document.body.append(ulEl);
