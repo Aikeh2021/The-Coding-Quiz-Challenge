@@ -1,4 +1,9 @@
 /* Styling the main and its contents to be centered */
+body {
+    height:131px;
+    overflow: hidden;
+}
+
 main {
     display:block;
     margin-left: 20%;
