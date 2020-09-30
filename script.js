@@ -3,6 +3,8 @@ console.log("WE LIVE BABY!");
 //Step 2: Listen for the click to make the opening page content disappear
 
 //Step 3: Simultaneously, dynamically create the question with buttons that have answer options
+
+//Variables to create shortcuts for the question elements
 var h1El1 = document.createElement("h1");
 var dlEl = document.createElement("dl");
 var dtEl1 = document.createElement("dt");
