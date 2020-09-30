@@ -34,12 +34,12 @@ liEl4.append(btnEl4);
 ulEl.append(liEl4);
 document.body.append(ulEl);
 
-for(i=0; i<ulTag.length; i++){
-    ulTag[i].setAttribute("style", "list-style-type:none");
-}
+// for(i=0; i<ulTag.length; i++){
+//     ulTag[i].setAttribute("style", "list-style-type:none");
+// }
 // ulTag.setAttribute("style", "list-style-type:none");
 
-//Question 1, dynamically generated Elements
+//Question 2, dynamically generated Elements
 h1El1.textContent = "The condition in an if/else statement is encolosed within ____________.";
 document.body.append(h1El1);
 btnEl1.textContent = "1. quotes";
@@ -55,6 +55,26 @@ liEl3.append(btnEl3);
 ulEl.append(liEl3);
 document.body.append(ulEl);
 btnEl4.textContent = "4. square brackets";
+liEl4.append(btnEl4);
+ulEl.append(liEl4);
+document.body.append(ulEl);
+
+//Question 3, dynamically generated Elements
+h1El1.textContent = "Arrays in JavaScript can be used to store _____________.";
+document.body.append(h1El1);
+btnEl1.textContent = "1. numbers and strings";
+liEl1.append(btnEl1);
+ulEl.append(liEl1);
+document.body.append(ulEl);
+btnEl2.textContent = "2. other arrays";
+liEl2.append(btnEl2);
+ulEl.append(liEl2);
+document.body.append(ulEl);
+btnEl3.textContent = "3. booleans";
+liEl3.append(btnEl3);
+ulEl.append(liEl3);
+document.body.append(ulEl);
+btnEl4.textContent = "4. all of the above";
 liEl4.append(btnEl4);
 ulEl.append(liEl4);
 document.body.append(ulEl);
