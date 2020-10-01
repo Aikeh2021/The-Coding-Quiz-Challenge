@@ -30,8 +30,12 @@ p {
 }
 
 /* Changing the appearance of the start button in the main */
-#start {
+button {
     color: white;
     background-color: purple;
     border-radius: 5px;
+}
+
+#backbtn {
+    color: white;
 }

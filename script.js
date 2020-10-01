@@ -1,21 +1,46 @@
 //Step 1: Test the javascript file to make sure it's linked correctly
 console.log("WE LIVE BABY!");
-//Step 2: Listen for the click to make the opening page content disappear and starts the timer
+console.log(window.document.body)
+//Step 2: Listen for the click to make the opening page content disappear 
 //add event listener//
 //queryselector(select main) to set its visibility property to 0
 // document.querySelector("main").removeChild();
-//Step 3: Simultaneously, dynamically create the question with buttons that have answer options
-document.getElementById("start").addEventListener("click", emptyTheMain);
-function emptyTheMain(){
-    document.getElementById("opening-content").remove("open-heading");
-}
-
 
 //  $("start").click(function(){
-//     $("main").empty();
+    // $("main").empty();
 // })
 
-//Variables to create shortcuts for the question elements
+
+
+document.getElementById("start").addEventListener("click", emptyTheMain);
+function emptyTheMain(){
+    document.getElementById("main").innerHTML = "";
+    
+    // var newDiv = document.createElement("div").setAttribute("class", "name: main-div");
+    // document.body.append(newDiv);
+
+}
+
+//Step 3: Start The Timer
+
+
+//Step 4: Simultaneously, dynamically create the question with buttons that have answer options
+
+
+// Variables to create shortcuts for the question elements
+// var h1El1 = document.createElement("h1");
+// var dlEl = document.createElement("dl");
+// var dtEl1 = document.createElement("dt");
+// var btnEl1 = document.createElement("button");
+// var dtEl2 = document.createElement("dt");
+// var btnEl2 = document.createElement("button");
+// var dtEl3 = document.createElement("dt");
+// var btnEl3 = document.createElement("button");
+// var dtEl4 = document.createElement("dt");
+// var btnEl4 = document.createElement("button");
+
+if("main".textContent = ""){document.getElementById("main")
+
 var h1El1 = document.createElement("h1");
 var dlEl = document.createElement("dl");
 var dtEl1 = document.createElement("dt");
@@ -27,26 +52,96 @@ var btnEl3 = document.createElement("button");
 var dtEl4 = document.createElement("dt");
 var btnEl4 = document.createElement("button");
 
+
+    h1El1.textContent = "Commonly used data types DO NOT include:";
+    document.body.main.append(h1El1);
+    btnEl1.textContent = "1.strings";
+    dtEl1.append(btnEl1);
+    dlEl.append(dtEl1);
+    document.body.main.append(dlEl);
+    btnEl2.textContent = "2.booleans";
+    dtEl2.append(btnEl2);
+    dlEl.append(dtEl2);
+    document.body.main.append(dlEl);
+    btnEl3.textContent = "3.alerts";
+    dtEl3.append(btnEl3);
+    dlEl.append(dtEl3);
+    document.body.main.append(dlEl);
+    btnEl4.textContent = "4.numbers";
+    dtEl4.append(btnEl4);
+    dlEl.append(dtEl4);
+    document.body.main.append(dlEl);
+}else{
+    console.log("main is still full");
+}
+
+//     h1El1.textContent = "Commonly used data types DO NOT include:";
+//     document.body.main.append(h1El1);
+//     btnEl1.textContent = "1.strings";
+//     dtEl1.append(btnEl1);
+//     dlEl.append(dtEl1);
+//     document.body.main.append(dlEl);
+//     btnEl2.textContent = "2.booleans";
+//     dtEl2.append(btnEl2);
+//     dlEl.append(dtEl2);
+//     document.body.main.append(dlEl);
+//     btnEl3.textContent = "3.alerts";
+//     dtEl3.append(btnEl3);
+//     dlEl.append(dtEl3);
+//     document.body.main.append(dlEl);
+//     btnEl4.textContent = "4.numbers";
+//     dtEl4.append(btnEl4);
+//     dlEl.append(dtEl4);
+//     document.body.main.append(dlEl);
+// }else{
+//     console.log("main is still full");
+// }
+
+//Start The Timer
+// var timeShowEl = document.getElementById("timer");
+
+// document.getElementById("").addEventListener("click", timeGoesDown);
+// function timeGoesDown(){
+// function countDown(){
+//     var timeLeft=75;
+//     var timeGoesDown=setInterval(function(){
+//         timeLeft--;
+//         timeShowEl.textContent= "Time: "+ timeLeft;
+//         if(timeLeft === 0){
+//             console.log("all done!");}
+//         }, 1000);
+//     }
+// var h1El1 = document.createElement("h1");
+// var dlEl = document.createElement("dl");
+// var dtEl1 = document.createElement("dt");
+// var btnEl1 = document.createElement("button");
+// var dtEl2 = document.createElement("dt");
+// var btnEl2 = document.createElement("button");
+// var dtEl3 = document.createElement("dt");
+// var btnEl3 = document.createElement("button");
+// var dtEl4 = document.createElement("dt");
+// var btnEl4 = document.createElement("button");
+
 //Question 1, dynamically generated Elements
 
-h1El1.textContent = "Commonly used data types DO NOT include:";
-document.body.append(h1El1);
-btnEl1.textContent = "1.strings";
-dtEl1.append(btnEl1);
-dlEl.append(dtEl1);
-document.body.append(dlEl);
-btnEl2.textContent = "2.booleans";
-dtEl2.append(btnEl2);
-dlEl.append(dtEl2);
-document.body.append(dlEl);
-btnEl3.textContent = "3.alerts";
-dtEl3.append(btnEl3);
-dlEl.append(dtEl3);
-document.body.append(dlEl);
-btnEl4.textContent = "4.numbers";
-dtEl4.append(btnEl4);
-dlEl.append(dtEl4);
-document.body.append(dlEl);
+// h1El1.textContent = "Commonly used data types DO NOT include:";
+// document.body.append(h1El1);
+// btnEl1.textContent = "1.strings";
+// dtEl1.append(btnEl1);
+// dlEl.append(dtEl1);
+// document.body.append(dlEl);
+// btnEl2.textContent = "2.booleans";
+// dtEl2.append(btnEl2);
+// dlEl.append(dtEl2);
+// document.body.append(dlEl);
+// btnEl3.textContent = "3.alerts";
+// dtEl3.append(btnEl3);
+// dlEl.append(dtEl3);
+// document.body.append(dlEl);
+// btnEl4.textContent = "4.numbers";
+// dtEl4.append(btnEl4);
+// dlEl.append(dtEl4);
+// document.body.append(dlEl);
 
 //this empties out all the content:
 // document.getElementById("opening-content").remove();
@@ -130,12 +225,3 @@ document.body.append(dlEl);
 // dtEl4.append(btnEl4);
 // dlEl.append(dtEl4);
 // document.body.append(dlEl);
-
-
-
-
-
-
-
-
-
