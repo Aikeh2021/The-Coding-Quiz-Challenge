@@ -11,15 +11,6 @@ body {
     text-align: center;
 }
 
-/* View highscores link styling */
-a {
-    text-decoration: none;
-}
-
-/* Time element styling */
-#timer{
-    float: right;
-}
 
 /* Paragraph in main styling */
 
@@ -38,4 +29,8 @@ button {
 
 #backbtn {
     color: white;
+}
+
+li {
+    font-size: 20px;
 }
