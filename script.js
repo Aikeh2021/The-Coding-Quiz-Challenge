@@ -1,6 +1,7 @@
 console.log("sigh");
 //DOM Variables
-var StarQuiz = document.getElementsByName("opening");
+var startQuiz = document.getElementById("start");
+var openingDiv = document.getElementsById("opening");
 
 
 //JS Variables
@@ -8,7 +9,10 @@ var StarQuiz = document.getElementsByName("opening");
 
 
 //Function Definitions
-
+startQuiz.addEventListener("click", function (){
+    this.remove(openingDiv);
+    // console.log("you clicked a button")
+});
 
 
 
