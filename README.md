@@ -31,6 +31,10 @@ To view the code used to build this website, [click here](https://github.com/Aik
 * [Kinds of Lists](https://www.w3schools.com/html/html_lists.asp)
 * [Explanation of the Javascript Not A Function Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_function)
 * [How To Use Query Selector All](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+* [JavaScript HTML DOM Event Listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+* [HTML DOM innerText Property](https://www.w3schools.com/jsref/prop_node_innertext.asp)
+* [HTML DOM createElement() Method](https://www.w3schools.com/jsref/met_document_createelement.asp)
+
 
 ## Losing Streak
 
