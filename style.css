@@ -14,7 +14,7 @@ body {
 
 /* Paragraph in main styling */
 
-p {
+.opening-par {
     text-align: center;
     margin-left: 10%;
     margin-right: 12%;
@@ -37,4 +37,14 @@ li {
 
 h1 {
     font-weight: bolder;
+}
+
+#content-div {
+    display:block;
+    margin-left: 25%;
+    margin-right: 25%;
+    float: left;
+}
+.questions-par-el {
+    margin: 5px;
 }

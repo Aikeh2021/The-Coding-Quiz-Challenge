@@ -34,6 +34,7 @@ To view the code used to build this website, [click here](https://github.com/Aik
 * [JavaScript HTML DOM Event Listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
 * [HTML DOM innerText Property](https://www.w3schools.com/jsref/prop_node_innertext.asp)
 * [HTML DOM createElement() Method](https://www.w3schools.com/jsref/met_document_createelement.asp)
+* [Removing Spaces Between Paragraph Tags](https://stackoverflow.com/questions/18392584/remove-spacing-between-p)
 
 
 ## Losing Streak

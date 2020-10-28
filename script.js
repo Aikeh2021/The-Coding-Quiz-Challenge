@@ -28,6 +28,21 @@ function askQuestionOne(){
     questionsHeadingEl.setAttribute("id", "questionsHeading");
     questionsHeadingEl.textContent = quizContent.quizQuestions[0];
     contentDiv.appendChild(questionsHeadingEl);
+    for(i = 0; i<quizContent.questionOneAnswerOptions.length; i++){
+        var parEl = document.createElement("p");
+        parEl.setAttribute("class", "questions-par-el");
+        var answerButton = document.createElement("button");
+        var i = 0
+        i++;
+        answerButton.setAttribute("id", "" + quizContent.questionOneAnswerOptions.indexOf(i));
+        answerButton.textContent = quizContent.questionOneAnswerOptions[i];
+        parEl.appendChild(answerButton);
+        contentDiv.appendChild(parEl);
+    }
+
+if(id === 2){console.log("right!")}else{
+    console.log("wrong")
+};
 };
         
 
