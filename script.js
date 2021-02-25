@@ -55,6 +55,9 @@ var secondsLeft = 60;
 //Function to set and start the timer. Also alerts when the timer is finished
 function setTime() {
   var timerInterval = setInterval(function () {
+    var points = 0;
+    var pointTracker = document.getElementById("points")
+    pointTracker.textContent = " Points: " + points;
     secondsLeft--;
     var timer = document.getElementById("time-display");
     timer.textContent = "Timer: " + secondsLeft + " seconds left";
