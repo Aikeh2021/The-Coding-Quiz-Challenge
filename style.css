@@ -4,6 +4,7 @@ body {
     overflow: hidden;
 }
 
+/* Styling for the div holding the content on the home page */
 #opening {
     display:block;
     margin-left: 20%;
@@ -12,43 +13,45 @@ body {
 }
 
 
-/* Paragraph in main styling */
-
+/* Styling for the opening paragraph on the home page */
 .opening-par {
     text-align: center;
     margin-left: 10%;
     margin-right: 12%;
 }
 
-/* Changing the appearance of the start button in the main */
+/* Styling of the start button on the home page */
 button {
     color: white;
     background-color: purple;
     border-radius: 5px;
 }
 
+/* Changing the font color on the back button */
 #backbtn {
     color: white;
 }
 
-li {
-    font-size: 20px;
-}
 
+/* Formating for the h1 headings with the questions in them */
 h1 {
     font-weight: bolder;
 }
 
+/* Styling for the div that contains all the content (e.g. the question, answer choices, etc) */
 #content-div {
     display:block;
     margin-left: 25%;
     margin-right: 25%;
     float: left;
 }
+/* Formatting for the paragraph elements that hold the answerbuttons */
 .questions-par-el {
     margin: 5px;
 }
 
+/* Spacing between the nav items so the letters don't touch */
 .nav-item {
     margin-left: 10px;
+    font-size: 20px;
 }
