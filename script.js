@@ -34,9 +34,9 @@ var quizContent = {
   ],
   questionFourAnswerOptions: [
     "1.commas",
-    "2. curly brackets",
-    "quotes",
-    "4. parentheses",
+    "2.curly brackets",
+    "3.quotation marks",
+    "4.parentheses",
   ],
   questionFiveAnswerOptions: [
     "1.JavaScript",
@@ -97,7 +97,6 @@ function askQuestionOne() {
         function setMiniTime() {
           var timeInterval = setInterval(function () {
             miniTimer--;
-            console.log("This is the right answer");
             var line = document.createElement("hr");
             var message = document.createElement("p");
             message.textContent = "You chose the right answer!";
@@ -115,7 +114,6 @@ function askQuestionOne() {
         function setMiniTime() {
           var timeInterval = setInterval(function () {
             miniTimer--;
-            console.log("You chose wrong");
             var line = document.createElement("hr");
             var message = document.createElement("p");
             message.textContent = "Sorry! Better luck next time . . . ";
@@ -158,7 +156,6 @@ function askQuestionTwo() {
         function setMiniTime() {
           var timeInterval = setInterval(function () {
             miniTimer--;
-            console.log("This is the right answer");
             var line = document.createElement("hr");
             var message = document.createElement("p");
             message.textContent = "You chose the right answer!";
@@ -176,7 +173,6 @@ function askQuestionTwo() {
         function setMiniTime() {
           var timeInterval = setInterval(function () {
             miniTimer--;
-            console.log("You chose wrong");
             var line = document.createElement("hr");
             var message = document.createElement("p");
             message.textContent = "Sorry! Better luck next time . . . ";
@@ -220,7 +216,6 @@ function askQuestionThree() {
         function setMiniTime() {
           var timeInterval = setInterval(function () {
             miniTimer--;
-            console.log("This is the right answer");
             var line = document.createElement("hr");
             var message = document.createElement("p");
             message.textContent = "You chose the right answer!";
@@ -238,7 +233,6 @@ function askQuestionThree() {
         function setMiniTime() {
           var timeInterval = setInterval(function () {
             miniTimer--;
-            console.log("You chose wrong");
             var line = document.createElement("hr");
             var message = document.createElement("p");
             message.textContent = "Sorry! Better luck next time . . . ";
@@ -260,4 +254,118 @@ function askQuestionThree() {
 //Function to put question 4 on the screen
 function askQuestionFour(){
   contentDiv.textContent = "";
+    //Creating the heading that will display a question
+    var questionsHeadingEl = document.createElement("h1");
+    questionsHeadingEl.setAttribute("id", "questionsHeading");
+    questionsHeadingEl.textContent = quizContent.quizQuestions[3];
+    contentDiv.appendChild(questionsHeadingEl);
+    for (i = 0; i < quizContent.questionFourAnswerOptions.length; i++) {
+      var parEl = document.createElement("p");
+      parEl.setAttribute("class", "questions-par-el");
+      var answerButton = document.createElement("button");
+      answerButton.textContent = quizContent.questionFourAnswerOptions[i];
+      index++;
+      answerButton.setAttribute("id", index);
+      parEl.appendChild(answerButton);
+      contentDiv.appendChild(parEl);
+      //Adding event listener to answerbuttons and doing something after one is clicked (starting another timer and letting the user
+      // know their selection was either right or wrong and either increasing the quiz time or decreasing it)
+      answerButton.addEventListener("click", function (event) {
+        if (event.target === document.getElementById("15")) {
+          var miniTimer = 2;
+          function setMiniTime() {
+            var timeInterval = setInterval(function () {
+              miniTimer--;
+              var line = document.createElement("hr");
+              var message = document.createElement("p");
+              message.textContent = "You chose the right answer!";
+              contentDiv.append(line, message);
+              if (miniTimer === 0) {
+                  secondsLeft = secondsLeft + 4;
+                  askQuestionFive();
+                clearInterval(timeInterval);
+              }
+            }, 1000);
+          }
+          setMiniTime();
+        } else {
+          var miniTimer = 2;
+          function setMiniTime() {
+            var timeInterval = setInterval(function () {
+              miniTimer--;
+              var line = document.createElement("hr");
+              var message = document.createElement("p");
+              message.textContent = "Sorry! Better luck next time . . . ";
+              contentDiv.append(line, message);
+              if (miniTimer === 0) {
+                  secondsLeft = secondsLeft - 6;
+                  askQuestionFive();
+                clearInterval(timeInterval);
+              }
+            }, 1000);
+          }
+          setMiniTime();
+        }
+      });
+    }
+}
+
+//Function to put question 5 on the screen
+function askQuestionFive(){
+  contentDiv.textContent = "";
+  //Creating the heading that will display a question
+  var questionsHeadingEl = document.createElement("h1");
+  questionsHeadingEl.setAttribute("id", "questionsHeading");
+  questionsHeadingEl.textContent = quizContent.quizQuestions[4];
+  contentDiv.appendChild(questionsHeadingEl);
+  for (i = 0; i < quizContent.questionFiveAnswerOptions.length; i++) {
+    var parEl = document.createElement("p");
+    parEl.setAttribute("class", "questions-par-el");
+    var answerButton = document.createElement("button");
+    answerButton.textContent = quizContent.questionFiveAnswerOptions[i];
+    index++;
+    answerButton.setAttribute("id", index);
+    parEl.appendChild(answerButton);
+    contentDiv.appendChild(parEl);
+    //Adding event listener to answerbuttons and doing something after one is clicked (starting another timer and letting the user
+    // know their selection was either right or wrong and either increasing the quiz time or decreasing it)
+    answerButton.addEventListener("click", function (event) {
+      if (event.target === document.getElementById("20")) {
+        var miniTimer = 2;
+        function setMiniTime() {
+          var timeInterval = setInterval(function () {
+            miniTimer--;
+            var line = document.createElement("hr");
+            var message = document.createElement("p");
+            message.textContent = "You chose the right answer!";
+            contentDiv.append(line, message);
+            if (miniTimer === 0) {
+              clearInterval(timeInterval);
+              alert("Hooray you've finished the quiz!");
+              location.replace("highscore.html");
+              
+            }
+          }, 1000);
+        }
+        setMiniTime();
+      } else {
+        var miniTimer = 2;
+        function setMiniTime() {
+          var timeInterval = setInterval(function () {
+            miniTimer--;
+            var line = document.createElement("hr");
+            var message = document.createElement("p");
+            message.textContent = "Sorry! Better luck next time . . . ";
+            contentDiv.append(line, message);
+            if (miniTimer === 0) {
+              clearInterval(timeInterval);
+              alert("Hooray you've finished the quiz!");
+              location.replace("highscore.html");
+            }
+          }, 1000);
+        }
+        setMiniTime();
+      }
+    });
+  }
 }
