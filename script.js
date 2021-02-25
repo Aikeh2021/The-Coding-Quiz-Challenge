@@ -193,7 +193,71 @@ function askQuestionTwo() {
     });
   }
 }
+
+
 //Function to put question 3 on the screen
 function askQuestionThree() {
+  contentDiv.textContent = "";
+  //Creating the heading that will display a question
+  var questionsHeadingEl = document.createElement("h1");
+  questionsHeadingEl.setAttribute("id", "questionsHeading");
+  questionsHeadingEl.textContent = quizContent.quizQuestions[2];
+  contentDiv.appendChild(questionsHeadingEl);
+  for (i = 0; i < quizContent.questionThreeAnswerOptions.length; i++) {
+    var parEl = document.createElement("p");
+    parEl.setAttribute("class", "questions-par-el");
+    var answerButton = document.createElement("button");
+    answerButton.textContent = quizContent.questionThreeAnswerOptions[i];
+    index++;
+    answerButton.setAttribute("id", index);
+    parEl.appendChild(answerButton);
+    contentDiv.appendChild(parEl);
+    //Adding event listener to answerbuttons and doing something after one is clicked (starting another timer and letting the user
+    // know their selection was either right or wrong and either increasing the quiz time or decreasing it)
+    answerButton.addEventListener("click", function (event) {
+      if (event.target === document.getElementById("12")) {
+        var miniTimer = 2;
+        function setMiniTime() {
+          var timeInterval = setInterval(function () {
+            miniTimer--;
+            console.log("This is the right answer");
+            var line = document.createElement("hr");
+            var message = document.createElement("p");
+            message.textContent = "You chose the right answer!";
+            contentDiv.append(line, message);
+            if (miniTimer === 0) {
+                secondsLeft = secondsLeft + 4;
+                askQuestionFour();
+              clearInterval(timeInterval);
+            }
+          }, 1000);
+        }
+        setMiniTime();
+      } else {
+        var miniTimer = 2;
+        function setMiniTime() {
+          var timeInterval = setInterval(function () {
+            miniTimer--;
+            console.log("You chose wrong");
+            var line = document.createElement("hr");
+            var message = document.createElement("p");
+            message.textContent = "Sorry! Better luck next time . . . ";
+            contentDiv.append(line, message);
+            if (miniTimer === 0) {
+                secondsLeft = secondsLeft - 6;
+                askQuestionFour();
+              clearInterval(timeInterval);
+            }
+          }, 1000);
+        }
+        setMiniTime();
+      }
+    });
+  }
+}
+
+
+//Function to put question 4 on the screen
+function askQuestionFour(){
   contentDiv.textContent = "";
 }
