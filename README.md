@@ -4,7 +4,6 @@
 * [Introduction](#introduction)
 * [Usage](#usage)
 * [Credits](#credits)
-* [Losing Streak](#losingstreak)
 * [License](#license)
 
 
@@ -13,7 +12,9 @@
 ## Introduction
 
 
-How well do you know your code? Better than me, I hope! This week, I was tasked with creating a quiz to test the knowledge of newly hired software developers. The quiz is designed to weed out the novices by grilling them on the basics of coding. An essential part of the interview process for developers and engineers is cracking coding tests that are designed to fry the minds and spirits of potential recruits. Though the test material is often not seen in projects a developer may be given once hired, it's important to pluck the brightest bulbs from the bunch to ensure the vacant position is filled by someone who can handle the rigor of the job. As a professional coder, this person should be knowledgable, dilligent, and repsonsible for producing spotless code. Otherwise, just anyone could be in charge of a piece of technology that has the potential to make or break a company.
+How well do you know your code? Better than me, I hope! This week, I was tasked with creating a quiz to test the knowledge of newly hired software developers. The quiz is designed to weed out the novices by grilling them on the basics of coding. An essential part of the interview process for developers and engineers is cracking coding tests that are designed to fry the minds and spirits of potential recruits.
+
+Though the test material is often not seen in projects a developer may be given once hired, it's important to pluck the brightest bulbs from the bunch to ensure the vacant position is filled by someone who can handle the rigor of the job. As a professional coder, this person should be knowledgable, dilligent, and repsonsible for producing spotless code. Otherwise, just anyone could be in charge of a piece of technology that has the potential to make or break a company.
 
 ## Usage
 
@@ -37,20 +38,11 @@ To view the code used to build this website, [click here](https://github.com/Aik
 * [Removing Spaces Between Paragraph Tags](https://stackoverflow.com/questions/18392584/remove-spacing-between-p)
 
 
-## Losing Streak
-
-
-I think it's safe to say my streak has begun. Looking back on where things went wrong, I believe I lacked a sense of urgency when realizing that I wasn't understanding the material covered when Javascript was introduced in unit 3. I thought that like the previous two units, I would understand eventually. It wasn't until I tanked the third assignment, and saw that each unit built on the one prior, that I realized that in order to do better, I would have to start from where my comprehension deviated.
-Although I was making some progress trying to review one lecture a day, it was very time consuming and mentally draining. 
-I had to ask myself, how did I keep letting my motivation dwindle until it was too late to make real progress on my homework assignments?
-I don't have an answer to that question, but I have one last solution to try to affect positive change in my class performance. Maybe if my new method works, I'll reflect on the positive changes I've seen in the next assingment. Hopefully I'll get back into the habit of submitting completed websites. Until then, this is all I have to offer.
-I will be revisiting the assignment once I have finished reviewing the lectures in unit 4. I may not understand now, but I will soon.
-
 ## License
 
 MIT License
 
-Copyright © 2020 Ashley Ikeh
+Copyright © 2020 [Ashley Ikeh](https://github.com/Aikeh2021)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
