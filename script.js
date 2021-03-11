@@ -46,8 +46,9 @@ var quizContent = {
   ],
 };
 
-//Global index variable
+//Global index and points variables
 var index = 0;
+var points = 0;
 
 //Global time variable
 var secondsLeft = 60;
@@ -55,7 +56,6 @@ var secondsLeft = 60;
 //Function to set and start the timer. Also alerts when the timer is finished
 function setTime() {
   var timerInterval = setInterval(function () {
-    var points = 0;
     var pointTracker = document.getElementById("points")
     pointTracker.textContent = " Points: " + points;
     secondsLeft--;
@@ -96,6 +96,7 @@ function askQuestionOne() {
     // know their selection was either right or wrong and either increasing the quiz time or decreasing it)
     answerButton.addEventListener("click", function (event) {
       if (event.target === document.getElementById("3")) {
+        points++;
         var miniTimer = 2;
         function setMiniTime() {
           var timeInterval = setInterval(function () {
@@ -155,6 +156,7 @@ function askQuestionTwo() {
     // know their selection was either right or wrong and either increasing the quiz time or decreasing it)
     answerButton.addEventListener("click", function (event) {
       if (event.target === document.getElementById("7")) {
+        points++;
         var miniTimer = 2;
         function setMiniTime() {
           var timeInterval = setInterval(function () {
@@ -215,6 +217,7 @@ function askQuestionThree() {
     // know their selection was either right or wrong and either increasing the quiz time or decreasing it)
     answerButton.addEventListener("click", function (event) {
       if (event.target === document.getElementById("12")) {
+        points++;
         var miniTimer = 2;
         function setMiniTime() {
           var timeInterval = setInterval(function () {
@@ -275,6 +278,7 @@ function askQuestionFour(){
       // know their selection was either right or wrong and either increasing the quiz time or decreasing it)
       answerButton.addEventListener("click", function (event) {
         if (event.target === document.getElementById("15")) {
+          points++;
           var miniTimer = 2;
           function setMiniTime() {
             var timeInterval = setInterval(function () {
@@ -334,6 +338,7 @@ function askQuestionFive(){
     // know their selection was either right or wrong and either increasing the quiz time or decreasing it)
     answerButton.addEventListener("click", function (event) {
       if (event.target === document.getElementById("20")) {
+        points++;
         var miniTimer = 2;
         function setMiniTime() {
           var timeInterval = setInterval(function () {

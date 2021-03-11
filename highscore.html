@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Highscores</title>
-        <meta name="description" content="">
+        <title>The Coding Quiz Challenge</title>
+        <meta name="Nice work on the quiz! Now add your name to the highscores list!" content="High scores list">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Stylesheet I created -->
         <link rel="stylesheet" href="style.css">
@@ -13,9 +13,17 @@
         <!-- Hardcoded highscore index.html elements -->
         <main id="highScoreMain">
             <h1>Highscores</h1>
+            <ul id="hsList">
+                <!-- Where the dynamically generated list of high scorers will go -->
+            </ul>
+            <input type="text" placeholder="first name" id="firstN"> <input type="text" placeholder="last name" id="lastN"> <button id="subBtn">Submit</button>
+            <hr>
             <button><a href="index.html" id="backbtn">Go Back</a></button>
             <button>Clear Highscores</button>
         </main>
+        <script>
+            console.log("This is connected too")
+        </script>
         <!-- Javascript sheet I created -->
         <script src="script.js"></script>
     </body>

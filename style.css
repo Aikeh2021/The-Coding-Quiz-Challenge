@@ -30,6 +30,7 @@ button {
 /* Changing the font color on the back button */
 #backbtn {
     color: white;
+    text-decoration: none;
 }
 
 
