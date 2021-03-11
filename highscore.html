@@ -32,7 +32,7 @@
         <hr />
       </div>
       <button><a href="index.html" id="backbtn">Go Back</a></button>
-      <button>Clear Highscores</button>
+      <button id="clear">Clear Highscores</button>
     </main>
     <script>
     // Creating a list element with the high scorerers name
@@ -43,8 +43,8 @@
           console.log(first, last);
           var pEl = document.createElement("p");
           pEl.textContent =  first + " " + last;
-          var listEl = document.getElementById("hsList")
-          listEl.append(pEl);
+          var listDiv = document.getElementById("hsList")
+          listDiv.append(pEl);
           addName();
       });
     // Function to remove the input after an li element is created
@@ -52,6 +52,13 @@
           var content = document.getElementById("content");
           content.innerHTML = "";
       }
+    //Function to clear high score name list
+        var clearBtn = document.getElementById("clear");
+        clearBtn.addEventListener("click", function(){
+            console.log("I was clicked");
+            var listDiv = document.getElementById("hsList")
+            listDiv.innerHTML = "";
+        })
     </script>
   </body>
 </html>
