@@ -12,6 +12,14 @@ body {
     text-align: center;
 }
 
+/* Styling for div holding the inputs on the highscores page */
+#highScoreMain {
+    display:block;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
 
 /* Styling for the opening paragraph on the home page */
 .opening-par {
@@ -37,6 +45,7 @@ button {
 /* Formating for the h1 headings with the questions in them */
 h1 {
     font-weight: bolder;
+    text-align: center;
 }
 
 /* Styling for the div that contains all the content (e.g. the question, answer choices, etc) */

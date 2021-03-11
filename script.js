@@ -61,16 +61,20 @@ function setTime() {
     secondsLeft--;
     var timer = document.getElementById("time-display");
     timer.textContent = "Timer: " + secondsLeft + " seconds left";
-    if (secondsLeft <= 0) {
+    if (secondsLeft <= 0 && points > 2) {
       clearInterval(timerInterval);
       alert("GAME OVER!");
       location.replace("highscore.html");
+    } else if (secondsLeft <= 0){
+      clearInterval(timerInterval);
+      alert("GAME OVER!");
+      location.replace("index.html");
     }
   }, 1000);
 }
 
 //Function Definitions
-startQuiz.addEventListener("click", function () {
+startQuiz.addEventListener("click", function(){
   openingDiv.innerHTML = "";
   setTime();
   askQuestionOne();
@@ -365,10 +369,14 @@ function askQuestionFive(){
             var message = document.createElement("p");
             message.textContent = "Sorry! Better luck next time . . . ";
             contentDiv.append(line, message);
-            if (miniTimer === 0) {
+            if (miniTimer === 0 && points > 2) {
               clearInterval(timeInterval);
               alert("Hooray you've finished the quiz!");
               location.replace("highscore.html");
+            }else{
+              clearInterval(timeInterval);
+              alert("Hooray you've finished the quiz!");
+              location.replace("index.html");
             }
           }, 1000);
         }
@@ -377,3 +385,4 @@ function askQuestionFive(){
     });
   }
 }
+

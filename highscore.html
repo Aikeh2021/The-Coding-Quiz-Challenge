@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>The Coding Quiz Challenge</title>
-        <meta name="Nice work on the quiz! Now add your name to the highscores list!" content="High scores list">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Stylesheet I created -->
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Hardcoded highscore index.html elements -->
-        <main id="highScoreMain">
-            <h1>Highscores</h1>
-            <ul id="hsList">
-                <!-- Where the dynamically generated list of high scorers will go -->
-            </ul>
-            <input type="text" placeholder="first name" id="firstN"> <input type="text" placeholder="last name" id="lastN"> <button id="subBtn">Submit</button>
-            <hr>
-            <button><a href="index.html" id="backbtn">Go Back</a></button>
-            <button>Clear Highscores</button>
-        </main>
-        <script>
-            console.log("This is connected too")
-        </script>
-        <!-- Javascript sheet I created -->
-        <script src="script.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>The Coding Quiz Challenge</title>
+    <meta
+      name="Nice work on the quiz! Now add your name to the highscores list!"
+      content="High scores list"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+    <!-- Stylesheet I created -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hardcoded highscore index.html elements -->
+    <main id="highScoreMain">
+      <h1>Highscores</h1>
+      <div id="hsList">
+        <!-- Where the dynamically generated list of high scorers will go -->
+      </div>
+      <div id="content">
+        <input type="text" placeholder="first name" id="firstN" />
+        <input type="text" placeholder="last name" id="lastN" />
+        <button id="subBtn">Submit</button>
+        <hr />
+      </div>
+      <button><a href="index.html" id="backbtn">Go Back</a></button>
+      <button>Clear Highscores</button>
+    </main>
+    <script>
+    // Creating a list element with the high scorerers name
+      var submitBtn = document.getElementById("subBtn");
+      submitBtn.addEventListener("click", function(){
+          var first = document.getElementById("firstN").value;
+          var last = document.getElementById("lastN").value;
+          console.log(first, last);
+          var pEl = document.createElement("p");
+          pEl.textContent =  first + " " + last;
+          var listEl = document.getElementById("hsList")
+          listEl.append(pEl);
+          addName();
+      });
+    // Function to remove the input after an li element is created
+      function addName() {
+          var content = document.getElementById("content");
+          content.innerHTML = "";
+      }
+    </script>
+  </body>
 </html>
